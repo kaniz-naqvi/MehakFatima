@@ -69,6 +69,7 @@ a {
 
 @media (max-width: 900px) {
   .navigators {
+    padding-top: 50px;
     width: 60%;
     height: 100%;
     background-color: #a9b2d6;
