@@ -48,7 +48,7 @@
   text-shadow: none;
   content: attr(data-name);
   position: absolute;
-  bottom: 120%;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--tooltip-bg); /* Use CSS variable for background */
@@ -60,7 +60,6 @@
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  /* font-weight: 600; */
   font-family: sans-serif;
   transition: opacity 0.2s, transform 0.2s;
 }
@@ -79,8 +78,7 @@
   }
 
   .skills-icon i::after {
-    bottom: 110%; /* Adjust position for smaller screens */
-    padding: 1px 4px;
+    padding: 5px 4px;
   }
 
   /* Show tooltip on tap */

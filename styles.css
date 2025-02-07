@@ -48,9 +48,11 @@ main {
 #home a {
   margin: auto;
 }
-#home > .hover-effect::before {
+#home .hover-effect::before,
+#contact .hover-effect::before {
   height: 4px;
   background-color: #333;
+  cursor: pointer;
 }
 /* Arrow down styling */
 .arrow-down {
@@ -73,7 +75,7 @@ main {
 }
 /********* About section ******/
 #about {
-  margin-top: 30px;
+  margin-top: 10%;
   padding: 80px;
   display: flex;
   width: 100%;
@@ -113,6 +115,7 @@ h2 {
   font-size: 50px;
   text-transform: uppercase;
   display: inline;
+  padding: 0 10px;
   border-bottom: 1px solid #333;
 }
 .intro {
