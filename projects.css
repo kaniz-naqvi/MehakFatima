@@ -44,7 +44,7 @@
   left: 0;
 }
 
-/* ✅ Set different background colors dynamically */
+/* Set different background colors dynamically */
 .contact {
   --bgc: #10586677;
 }
