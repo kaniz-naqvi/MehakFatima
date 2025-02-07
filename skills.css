@@ -6,6 +6,7 @@
 
 .skills-icon i {
   position: relative;
+  text-shadow: 1px 2px 0 #fff;
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -37,13 +38,14 @@
   --tooltip-bg: #d4037f;
 }
 
-/* Hover effect */
+/* Hover effect for desktop */
 .skills-icon i:hover {
   transform: scale(1.2);
 }
 
 /* Tooltip pseudo-element */
 .skills-icon i::after {
+  text-shadow: none;
   content: attr(data-name);
   position: absolute;
   bottom: 120%;
@@ -57,19 +59,33 @@
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-family: sans-serif;
   transition: opacity 0.2s, transform 0.2s;
 }
 
-/* Tooltip visible on hover */
+/* Tooltip visible on hover (desktop) */
 .skills-icon i:hover::after {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(-5px);
 }
-@media (max-width: 700px) {
+
+/* Tooltip visible on tap (mobile) */
+@media (max-width: 900px) {
   .skills-icon {
     font-size: 30px;
+  }
+
+  .skills-icon i::after {
+    bottom: 110%; /* Adjust position for smaller screens */
+    padding: 1px 4px;
+  }
+
+  /* Show tooltip on tap */
+  .skills-icon i:active::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
   }
 }

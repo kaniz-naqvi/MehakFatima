@@ -10,7 +10,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: #eebfc8;
+  background-color: #9a82bd;
   box-shadow: 0 0 10px #00000086;
 }
 
@@ -74,8 +74,8 @@ a {
   .navigators {
     width: 60%;
     height: 100%;
-    background-color: #eebfc8d9;
-    top: 10%; /* Ensure it aligns at the top */
+    background-color: #9a82bd;
+    top: 9%; /* Ensure it aligns at the top */
     z-index: 999; /* Ensure it's visible on top of other content */
     right: 0;
     position: fixed; /* Use fixed positioning for mobile */

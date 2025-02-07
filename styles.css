@@ -11,8 +11,19 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-color: #eebfc8;
+  background-color: #c8a2c88f;
   overflow-x: hidden;
+}
+/* Primary Highlight */
+.primary {
+  color: #553c9a;
+  text-shadow: 0px 0px 0 #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.primary:hover {
+  color: #442e7a;
 }
 /* Main */
 main {
@@ -42,6 +53,7 @@ main {
 }
 /* Arrow down styling */
 .arrow-down {
+  margin-bottom: -70px;
   font-size: 3em;
   transition: all 0.3s ease;
   animation: move-arrow 2s infinite ease-in-out;
@@ -102,12 +114,13 @@ h2 {
   display: inline;
   border-bottom: 1px solid #333;
 }
-.about-me > p {
-  padding: 10px 0px;
+.intro {
+  padding-top: 20px;
+}
+.about-me p {
+  /* color: #333; */
   line-height: 27px;
-
   font-size: 1em;
-  border-bottom: 2px #1d1d1d solid;
 }
 .icons {
   margin-top: 10px;
@@ -134,27 +147,43 @@ footer > .social-icons {
   width: 100%;
 }
 @media (max-width: 900px) {
+  #home {
+    margin-top: 7%;
+  }
   .text-larger,
   .arrow-down {
-    font-size: 2em;
+    font-size: 3.8em;
   }
   #about {
     margin-top: 0;
     padding: 10px;
     flex-direction: column-reverse;
   }
-  #about > div {
+  .about-me {
     width: 100%;
   }
   h2 {
     font-size: 30px;
   }
   .image {
+    width: 50%;
     margin: 0 30px;
   }
   .about-me > p {
     margin: 0 !important;
     font-size: 0.975em;
     border-width: 1px;
+  }
+}
+@media (max-width: 500px) {
+  #home {
+    margin-top: 10%;
+  }
+  .image {
+    width: 90%;
+  }
+  .text-larger,
+  .arrow-down {
+    font-size: 2.5em;
   }
 }
