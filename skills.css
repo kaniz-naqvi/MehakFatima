@@ -54,7 +54,8 @@
   background-color: var(--tooltip-bg); /* Use CSS variable for background */
   color: white;
   font-size: 12px;
-  padding: 5px 8px;
+  padding: 10px;
+  letter-spacing: 0.3px;
   border-radius: 5px;
   white-space: nowrap;
   opacity: 0;

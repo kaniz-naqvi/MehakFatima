@@ -11,8 +11,8 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-color: #c8a2c88f;
-  overflow-x: hidden;
+  background-color: #fae9ee;
+  color: #333;
 }
 /* Primary Highlight */
 .primary {
@@ -50,6 +50,7 @@ main {
 }
 #home > .hover-effect::before {
   height: 4px;
+  background-color: #333;
 }
 /* Arrow down styling */
 .arrow-down {
