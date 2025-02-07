@@ -69,11 +69,11 @@ a {
 
 @media (max-width: 900px) {
   .navigators {
-    padding-top: 50px;
-    width: 60%;
+    padding-top: 100px;
+    width: 70%;
     height: 100%;
     background-color: #a9b2d6;
-    top: 9%; /* Ensure it aligns at the top */
+    top: 5%; /* Ensure it aligns at the top */
     z-index: 999; /* Ensure it's visible on top of other content */
     right: 0;
     position: fixed; /* Use fixed positioning for mobile */
