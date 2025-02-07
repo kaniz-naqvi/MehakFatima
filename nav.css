@@ -71,7 +71,7 @@ a {
   .navigators {
     width: 60%;
     height: 100%;
-    background-color: #9a82bd;
+    background-color: #a9b2d6;
     top: 9%; /* Ensure it aligns at the top */
     z-index: 999; /* Ensure it's visible on top of other content */
     right: 0;
